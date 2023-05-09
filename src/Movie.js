@@ -1,13 +1,14 @@
 import React from "react";
 
-const Movie = () => {
+const Movie = ({name ,price, id})=> {
     return (
         <div>
-            <h1> The movie</h1>
-
+            <h3>{name}</h3>
+            <p>{price}</p>
+            <h5>{id}</h5>
         </div>
-    )
-}
+    );
+};
 
 
 
