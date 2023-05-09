@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Movie from './Movie';
 
 // Creating a movie list
 // Movies  is a variable with the movies data either from an array or from a fetched API.
@@ -23,10 +24,7 @@ const MovieList = () => {
     ])
     return(
         <div>
-        {movies.map((movie) => (
-            <li>{movie.name}</li>
-
-        ) )}
+      <Movie />
         </div>
 
     );
